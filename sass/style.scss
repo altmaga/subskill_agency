@@ -1,16 +1,2 @@
-/* General setting */
-$body-color: rgba(54,49,49, 0.8);
-$input-color: rgba(90,90,90,0.9);
-$input-border-color: rgba(90,90,90,0.4);
-$font-family-base: 'Open Sans', sans-serif;
-
-/* custom style */
-.bg-img {
-  background-image: url('assets/img/bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Import */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
 @import "bootstrap/bootstrap.scss";
+@import "custom-style.scss";
