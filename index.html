@@ -14,6 +14,7 @@
 <body>
   <main class="full">
     <section class="row">
+      <!-- Left -->
       <div class="col-12 col-md-4 p-5 bg-img text-white">
         <div class="d-flex align-items-center mb-5">
           <button type="button" class="btn btn-outline-light"><i class="fa fa-chevron-left"></i></button>
@@ -23,12 +24,15 @@
         <p class="font-weight-bold">Rege Persarum bellis finitimis iniglu </p>
         <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis.</p>
       </div>
+      <!-- Right -->
       <div class="col-12 col-md-8 px-4 px-md-5 py-3">
         <div id='map' class="mb-4"></div>
         <div>
           <h1 class="font-weight-bold">Créer un compte</h1>
           <p>Veuillez renseigner les informations ci-dessous. </p>
+          <!-- Form -->
           <form action="POST">
+            <!-- Genre -->
             <div class="form-group d-flex">
               <legend class="col-form-label col-2 pt-0">Vous êtes</legend>
               <div class="custom-control custom-radio col-2">
@@ -45,16 +49,19 @@
                 <div class="invalid-feedback">More example invalid feedback text</div>
               </div>
             </div>
+            <!-- ID -->
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Nom" required>
             </div>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Prénom" required>
             </div>
+            <!-- Email -->
             <div class="form-group">
               <label for="formControlEmail">Email</label>
               <input type="email" class="form-control" id="formControlEmail" placeholder="john@doe.com" required>
             </div>
+            <!-- Select date -->
             <div class="form-group d-flex">
               <select class="form-control col-6 mr-3 custom-select-down" required>
                 <option disabled selected value>Date de naissance</option>
@@ -121,29 +128,32 @@
                 <option>1990</option>
               </select>
             </div>
+            <!-- Code postal -->
             <div class="form-group">
-              <input type="text" class="form-control" id="inputCP" placeholder="Code postal">
+              <input type="text" class="form-control" id="inputCP" placeholder="Code postal" pattern="\d+">
             </div>
-            <!-- First password -->
+            <!-- Mot de passe -->
             <div class="form-group d-flex align-items-center">
               <input type="password" id="password-field" class="form-control pwd" aria-describedby="passwordHelpBlock" placeholder="Mot de passe" onkeyup="checkPass();">
               <i id="pass-status" class="fa fa-eye" aria-hidden="true"></i>
             </div>
-            <!-- Confirm password -->
+            <!-- Confirmation -->
             <div class="form-group d-flex align-items-center">
               <input type="password" id="password-field-confirm" class="form-control pwd" aria-describedby="passwordHelpBlock" placeholder="Confirmation mot de passe" onkeyup="checkPass();">
               <i id="pass-status" class="fa fa-eye" aria-hidden="true"></i>
-              <span id="confirm-message" class="confirm-message"></span>
             </div>
+            <!-- Condition check -->
             <div class="form-group">
               <div class="custom-control custom-checkbox py-3">
                 <input type="checkbox" class="custom-control-input" id="customCheck" required>
                 <label class="custom-control-label pl-1" for="customCheck">J’accepte les <span class="font-italic"><u>conditions générales de ventes</u></span> et les respecteraient <br>sans conditions.</label>
               </div>
             </div>
+            <!-- Envoyer -->
             <div class="form-group">
               <button type="submit" class="btn btn-primary btn-lg btn-block text-uppercase">Créer un compte</button>
             </div>
+            <!-- Se co -->
             <div class="form-group">
               <p class="text-center">Vous avez déja un compte ? <a href="#">Connectez-vous</a></p>
             </div>
@@ -152,6 +162,7 @@
       </div>
     </section>
   </main>
+  <!-- Script -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
   <script src="js/index.js"></script>
   <script src="js/map.js"></script>
