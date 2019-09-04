@@ -1,10 +1,14 @@
 # subskill_agency
 
-// To do
+```
+Projet : Test Subskill
+
+Description :
 Intégration de la maquette graphique
 Vérification des champs du formulaire
 Gérer les interactions / animations
 
-// Front
+Outils :
 Utilisation de bootstrap
 Utilisation de Sass
+```
